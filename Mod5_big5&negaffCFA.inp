@@ -1,0 +1,44 @@
+TITLE:      This is a 6 factor CFA model of data from the adapted big 
+            five personality inventory and a negative affect scale
+            from the MIDUS 2 aggregate file
+            !Indicators have been specified as categorical
+
+DATA:       FILE IS "C:\Users\mcraft\Desktop\Pattern Mixture Model
+            Research\big5&negaff_withoutnames.csv";
+
+VARIABLE:   NAMES ARE M2ID B1SE1 B1SE2 B1SE3 B1SE4 B1SE5 
+            B1SE6 B1SE7 B1SE8 B1SE9 B1SE10 B1SE11 B1SE12 
+            B1SE13 B1SE14 B1SE15 B1SE16 B1SE17 B1SE18 B1SE19 
+            B1SE20 B1SE21 B1SE22 B1SE23 B1SE24 B1SE25 B1SE26 
+            B1SE27 B1SE28 B1SE29 B1SE30 B1SE31 
+            B1SA241 B1SA242 B1SA243 B1SA244 B1SA245 B1SA246 
+            patnum nohighschool highschool college education
+            racewhite hispanic fem;
+            CATEGORICAL =  B1SE1-B1SE31;
+            MISSING = .;
+            USEVARIABLES ARE B1SE1 B1SE2 B1SE3 B1SE4 B1SE5 
+            B1SE6 B1SE7 B1SE8 B1SE9 B1SE10 B1SE11 B1SE12 
+            B1SE13 B1SE14 B1SE15 B1SE16 B1SE17 B1SE18 B1SE19 
+            B1SE20 B1SE21 B1SE22 B1SE23 B1SE24 B1SE25 B1SE26 
+            B1SE27 B1SE28 B1SE29 B1SE30 B1SE31 B1SA241 B1SA242 
+            B1SA243 B1SA244 B1SA245 B1SA246;
+
+ANALYSIS:   ESTIMATOR = BAYES;
+            BITERATIONS = 50000(35000);
+
+MODEL:	    neuro BY B1SE3 B1SE8 B1SE13 B1SE19;
+            extra BY B1SE1 B1SE6 B1SE11 B1SE23 B1SE27; 
+            open BY B1SE14 B1SE17 B1SE21 B1SE22 B1SE25 B1SE28 
+            B1SE29;
+            consc BY B1SE4 B1SE9 B1SE16 B1SE24 B1SE31; 
+            agree BY B1SE2 B1SE7 B1SE12 B1SE18 B1SE26;
+            agency BY B1SE5 B1SE10 B1SE15 B1SE20 B1SE30;
+            negaff BY B1SA241 B1SA242 B1SA243 B1SA244 B1SA245 B1SA246;
+            negaff ON neuro;
+            negaff ON extra;
+            negaff ON open;
+            negaff ON consc;
+            negaff ON agree;
+            negaff ON agency;
+
+OUTPUT:     TECH8 STANDARDIZED;
