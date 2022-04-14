@@ -1,7 +1,7 @@
 # Mitigating the Influence of Missing Data
 Summary:
 
-It is important to carefully consider missing values in a data set before drawing conclusions from the results of an analysis. Conclusions based on data that are systematically missing may only apply to a small subset of the broader population the conclusions are intended to appply to. In this project, we use personality and affect data to demonstrate a statistical method that accounts for the cause of the missing values. We show that the conclusions drawn from the results of an analysis that does not account for the cause of the missing values are different from the results of an analysis that DOES account for the cause of the missing values. 
+It is important to carefully consider missing values in a data set before drawing conclusions from the results of an analysis. Conclusions based on data that are systematically missing may only apply to a small subset of the broader population the conclusions are intended to apply to. In this project, we use personality and negative affect data to demonstrate a statistical method that accounts for the cause of the missing values. We show that the conclusions drawn from the results of an analysis that does not account for the cause of the missing values are different from the results of an analysis that DOES account for the cause of the missing values. 
 
 Application of Results:
 
@@ -9,7 +9,7 @@ The implication of our findings is that the presence of missing values in a data
 
 Details of the Analysis:
 
-A set of questions pertaining to personality and negative affect (respectively) were used to "get at" personality and negative affect (respectively). Statistical methods were used to evaluate the psychometric properties of these sets of questions to ensure accuracy of the conclusions drawn from the results of our analysis. The R scripts stored above are for evaluating the psychometric properties (reliability via the greatest lower bound) of the personality and negative affect scales. 
+A set of questions pertaining to personality and negative affect (respectively) were used to measure personality and negative affect (respectively). Statistical methods were used to evaluate the psychometric properties of these sets of questions to ensure accuracy of the conclusions drawn from the results of our analysis. The R scripts stored above are for evaluating the psychometric properties (reliability via the greatest lower bound) of the personality and negative affect scales. 
 
 Mplus was used to conduct the substantive statistical analyses, and the Mplus input and output files are stored above. The output file contains the results of the substantive statistical analyses.
 
