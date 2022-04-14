@@ -3,10 +3,14 @@ Summary:
 
 It is important to carefully consider missing values in a data set before drawing conclusions from the results of an analysis. Conclusions based on data that are systematically missing may only apply to a small subset of the broader population the conclusions are intended to appply to. In this project, we use personality and affect data to demonstrate a statistical method that accounts for the cause of the missing values. We show that the conclusions drawn from the results of an analysis that does not account for the cause of the missing values are different from the results of an analysis that DOES account for the cause of the missing values. 
 
-The R scripts are for calculating reliability (greatest lower bound) of the personality and negative affect scales. 
+Application of Results:
 
-The .inp file is an Mplus input file for fitting the structural equation model of interest. 
+The implication of our findings is that the presence of missing values in a data set may lead to inaccurate conclusions. Application of statistical methods for addressing missing data can improve the accuracy of conclusions drawn from the results of an analysis. 
 
-The .out file is an Mplus output file containing the model results. 
+Details of the Analysis:
 
-The Powerpoint files provides a summary of the project.
+A set of questions pertaining to personality and negative affect (respectively) were used to "get at" personality and negative affect (respectively). Statistical methods were used to evaluate the psychometric properties of these sets of questions to ensure accuracy of the conclusions drawn from the results of our analysis. The R scripts stored above are for evaluating the psychometric properties (reliability via the greatest lower bound) of the personality and negative affect scales. 
+
+Mplus was used to conduct the substantive statistical analyses, and the Mplus input and output files are stored above. The output file contains the results of the substantive statistical analyses.
+
+A Powerpoint file summarizes the project and is stored above.
