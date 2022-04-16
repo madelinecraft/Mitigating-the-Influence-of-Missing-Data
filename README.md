@@ -9,8 +9,8 @@ The implication of our findings is that the presence of missing values in a data
 
 ## Details of the Analysis:
 
-A set of questions pertaining to personality and negative affect (respectively) were used to measure personality and negative affect (respectively). Statistical methods were used to evaluate the psychometric properties of these sets of questions to ensure accuracy of the conclusions drawn from the results of our analysis. The R scripts stored above (“GreatestLowerBound.R” and “Greatest Lower Bound NegAff.R”) are for evaluating the psychometric properties (reliability via the greatest lower bound) of the personality and negative affect scales.
+* A set of questions pertaining to personality and negative affect (respectively) were used to measure personality and negative affect (respectively). Statistical methods were used to evaluate the psychometric properties of these sets of questions to ensure accuracy of the conclusions drawn from the results of our analysis. The R scripts stored above (“GreatestLowerBound.R” and “Greatest Lower Bound NegAff.R”) are for evaluating the psychometric properties (reliability via the greatest lower bound) of the personality and negative affect scales.
 
-Mplus was used to conduct the substantive statistical analyses, and the Mplus input and output files (“Mod5_big5&negaffCFA.inp” and “mod5_big5&negaffcfa.out”) are stored above. The output file contains the results of the substantive statistical analyses.
+* Mplus was used to conduct the substantive statistical analyses, and the Mplus input and output files (“Mod5_big5&negaffCFA.inp” and “mod5_big5&negaffcfa.out”) are stored above. The output file contains the results of the substantive statistical analyses.
 
-A Powerpoint file summarizes the project and is stored above.
+* A Powerpoint file summarizes the project and is stored above.
